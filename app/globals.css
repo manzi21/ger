@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+  font-feature-settings: "ss01", "ss02";
+}
+
+/* Schöne Standard-Prosa für Markdown-ähnliche Inhalte */
+.prose-de {
+  @apply text-slate-700;
+}
+.prose-de h2 {
+  @apply mt-10 text-2xl font-bold text-slate-900;
+}
+.prose-de h3 {
+  @apply mt-8 text-xl font-semibold text-slate-900;
+}
+.prose-de p {
+  @apply mt-4 leading-relaxed;
+}
+.prose-de ul {
+  @apply mt-4 list-disc pl-6;
+}
+.prose-de ul li {
+  @apply mt-1;
+}
+.prose-de a {
+  @apply text-brand-700 underline underline-offset-2 hover:text-brand-800;
+}
+.prose-de strong {
+  @apply font-semibold text-slate-900;
+}
+
+/* Entlastet das Footer-Layout, wenn die Sticky-CTA aktiv ist */
+.has-sticky-cta {
+  @apply pb-24 sm:pb-0;
+}
